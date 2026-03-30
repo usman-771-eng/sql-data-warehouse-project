@@ -26,31 +26,29 @@ Gold Layer (Analytics / Star Schema)
 
 ## 📂 Project Structure
 ```
-data-warehouse-project/
+sql-data-warehouse-project/
 │
-├── datasets/
+├── Bronze Layer/
+│   ├── ddl_bronze.sql
+│   └── procedure_load_bronze.sql
+│
+├── Silver Layer/
+│   ├── ddl_silver.sql
+│   └── load_silver.sql
+│
+├── Gold Layer/
+│   └── ddl_gold.sql
+│
+├── Datasets/
 │   ├── source_crm/
 │   └── source_erp/
 │
-├── sql/
-│   ├── bronze/
-│   │   ├── ddl_bronze.sql
-│   │   └── load_bronze.sql
-│   │
-│   ├── silver/
-│   │   ├── ddl_silver.sql
-│   │   └── load_silver.sql
-│   │
-│   ├── gold/
-│   │   └── ddl_gold.sql
-│   │
-│   └── datawarehouse_init.sql
+├── Documents/
+│   └── data_catalog.md
 │
-├── docs/
-│   ├── data_catalog.md
-│   └── naming_conventions.md
-│
-└── README.md
+├── datawarehouse_init.sql
+├── README.md
+└── LICENSE
 ```
 
 ---
@@ -95,8 +93,8 @@ data-warehouse-project/
 
 ## Documentation
 
-- Data Catalog → `docs/data_catalog.md`  
-- Naming Standards → `docs/naming_conventions.md`  
+- Data Catalog → `Documents/data_catalog.md`  
+- Naming Standards → `Documents/naming_conventions.md`  
 
 ---
 
