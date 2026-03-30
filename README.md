@@ -50,26 +50,25 @@ data-warehouse-project/
 │   ├── data_catalog.md
 │   └── naming_conventions.md
 │
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
 
-## ⚙️ Key Features
+##  Key Features
 
-- ✅ End-to-End ETL Pipeline (Bronze → Silver → Gold)  
-- ✅ Data Cleaning & Standardization  
-- ✅ Deduplication using Window Functions  
-- ✅ Data Validation & Business Rule Implementation  
-- ✅ Star Schema Design (Fact & Dimension Tables)  
-- ✅ Surrogate Key Implementation  
+-  End-to-End ETL Pipeline (Bronze → Silver → Gold)  
+-  Data Cleaning & Standardization  
+-  Deduplication using Window Functions  
+-  Data Validation & Business Rule Implementation  
+-  Star Schema Design (Fact & Dimension Tables)  
+-  Surrogate Key Implementation  
 
 ---
 
-## 🧠 Concepts & Technologies Used
+##  Technologies Used
 
-- **SQL Server (T-SQL)**
+- SQL Server (T-SQL)  
 - Data Warehousing Concepts  
 - Medallion Architecture  
 - ETL Pipeline Design  
@@ -78,3 +77,30 @@ data-warehouse-project/
 
 ---
 
+## How to Run
+
+1. Run `datawarehouse_init.sql`  
+2. Execute Bronze Load → `EXEC bronze.load_bronze`  
+3. Execute Silver Load → `EXEC silver.load_silver`  
+4. Run Gold Layer script  
+
+---
+
+## Data Model
+
+- **Dimensions**: `dim_customers`, `dim_products`  
+- **Fact Table**: `fact_sales`  
+
+---
+
+## Documentation
+
+- Data Catalog → `docs/data_catalog.md`  
+- Naming Standards → `docs/naming_conventions.md`  
+
+---
+
+## Author
+
+** Shaik Mahammad Usman **  
+Aspiring Data Engineer 
