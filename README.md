@@ -102,5 +102,5 @@ data-warehouse-project/
 
 ## Author
 
-** Shaik Mahammad Usman **  
+**Shaik Mahammad Usman**  
 Aspiring Data Engineer 
